@@ -14,7 +14,7 @@ Due to government regulation, the system should provide us with the ability to f
 - Slot numbers of all slots where cars of drivers of a particular age are parked.
 
 ## Requirements
-Python must be installed on the system. he code is compatible with Python3
+Python must be installed on the system. The code is compatible with Python3
 
 ## Running the Application
 1. Clone the repository / Download the source code
