@@ -40,7 +40,7 @@ def depart_vehicle_middleware(parking, slot):
 	slot = int(slot)
 	capacity = parking.get_capacity()
 	if slot < 1 or slot > capacity:
-		return 'No such lot exists!'
+		return 'No such slot exists!'
 	car_info = parking.depart_vehicle(slot)
 	
 	if not car_info:
@@ -56,6 +56,8 @@ def depart_vehicle_middleware(parking, slot):
 ''' Returns parking slots where the age of the driver is same the requested age '''
 def get_slot_nos_by_driver_age_middleware(parking, driver_age):
 	valid_slots = parking.get_slot_nos_by_driver_age(int(driver_age))
+	if not valid_slots:
+		return 'No car found with driver age - {0}'.format(driver_age)
 	status = ', '.join(map(str, valid_slots))
 	return status
 
