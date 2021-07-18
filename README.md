@@ -26,6 +26,8 @@ cd ActivityRoundProject\src
 ```python
 python app.py <input file location> 
 ```
+## Running the application on replit
+<img src="/snapshots/replit_input_test.PNG" alt="Input Test Case Snapshot" />
 
 ## Run the sample test case
 ```python
