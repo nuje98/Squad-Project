@@ -1,8 +1,5 @@
 from vehicle import Vechicle_Info
 
-
-from vehicle import Vechicle_Info
-
 class Parking_Lot:
     ''' Constructor to initialize the parking lot object with the info given in input '''
     def __init__(self):
