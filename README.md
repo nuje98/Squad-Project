@@ -42,5 +42,5 @@ python unit_testing.py
 ```
 <img src="/snapshots/Unit_test.PNG" alt="Unit Test Cases Snapshot" />
 
-
-
+## Use-Case Diagram
+<img src="/UML/use_case.PNG" alt="Unit Test Cases Snapshot" />
