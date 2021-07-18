@@ -35,7 +35,6 @@ class Parking_Lot:
             self.slots[slot_no] = Vechicle_Info(vehicle_reg_no, driver_age)
             self.vacant_slots -= 1
             slot_no += 1
-            self.vehicle_info = self.slots[slot_no]
             return slot_no
     
     def get_capacity(self):
@@ -45,7 +44,7 @@ class Parking_Lot:
             return None
 
     def depart_vehicle(self, slot_no):
-        if self.vacant_slots > 0 and self.slots[slot_no - 1] != None:
+        if self.vacant_slots < self.capacity and self.slots[slot_no - 1] != None:
             vehicle_info = self.slots[slot_no - 1]
             self.slots[slot_no - 1] = None
             self.vacant_slots += 1
@@ -58,7 +57,7 @@ class Parking_Lot:
         for slot in self.slots:
             if slot and slot.driver_age == driver_age:
                 vehicle_reg_nos.append(slot.vehicle_reg_no)
-            return vehicle_reg_nos
+        return vehicle_reg_nos
 
     def get_slot_no_by_reg_no(self, vehicle_reg_no):
         for slot_no, slot in enumerate(self.slots):
