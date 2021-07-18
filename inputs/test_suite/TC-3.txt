@@ -1,0 +1,7 @@
+Create_parking_lot 3
+Slot_numbers_for_driver_of_age 21
+Park PB-01-TG-2341 driver_age 40
+Slot_number_for_car_with_number FAIL
+Leave 4
+Park HR-29-TG-3098 driver_age 39
+Vehicle_registration_number_for_driver_of_age 39
